@@ -29,7 +29,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Darya Verzhbinsky</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/circle.png" width="100px" alt="Darya's face">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./img/profile.png"  alt="Darya's face">
       </span>
     </a> 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,9 +41,9 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
+        </li> -->
 
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#research">Research</a>
@@ -78,23 +78,37 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       
       <div class="w-100">
-        <img class="rounded-circle my-photo" width="300px" src="./img/profile.png" alt="Darya's face">
+        <!-- <img class="rounded-circle my-photo" width="300px" src="./img/profile.png" alt="Darya's face"> -->
         <br>
         <br>
         <br>
         <h1 class="mb-0">Darya
           <span class="text-primary">Verzhbinsky</span>
         </h1>
-        <div class="subheading mb-5">La Jolla, CA · (415) 939-5812 ·
+        <!-- <div class="subheading mb-5">La Jolla, CA · (415) 939-5812 ·
           <a href="mailto:dverzhbi@ucsd.edu">dverzhbi@ucsd.edu</a>
-        </div>
+        </div> -->
+        <br>
         <p class="lead mb-5">
           I am a 4th year undergraduate student at UC San Diego majoring in Computer Science.
-          I am planning to apply to Programming Language PhD programs this Fall 2020.
+          I am planning to apply to Programming Language PhD programs for <b>Fall 2021</b>. I am
+          particularly interested in Program Synthesis.
         </p>
-        <p><a href="./files/resume.pdf" target="_blank">Resume</a></p>
+
+        <p class="lead mb-5">
+          I am currently working with <a href="https://cseweb.ucsd.edu/~npolikarpova/" target="_blank">Nadia Polikarpova</a>
+          on building a type-guided enumerative synthesis tool for Haskell programmers.
+        </p>
+
+        <p>
+          <b>Resume:</b> <a href="./files/resume.pdf" target="_blank">pdf</a>
+          <br>
+          <b>Email:</b> <a href="mailto:dverzhbi@ucsd.edu">dverzhbi@ucsd.edu</a>
+
+        </p>
+
         <br>
-        <p><i>Last edited: October 2020</i></p>
+        <p><i>Last edited: December 2020</i></p>
         <br>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/darya-ver/" target="_blank">
@@ -103,9 +117,6 @@
           <a href="https://github.com/darya-ver" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-          <!-- <a href="https://github.com/darya-ver" target="_blank">
-            <i class="fab ">Resume</i>
-          </a> -->
 
 
           <!-- <a href="#">
@@ -122,7 +133,7 @@
 
 
 
-    <hr class="m-0">
+    <!-- <hr class="m-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
@@ -132,14 +143,22 @@
           <div class="resume-content">
             <h3 class="mb-0">University of California, San Diego</h3>
             <div class="subheading mb-3">Bachelor of Science - Computer Science</div>
-            <!-- <div>Computer Science</div> -->
             <p><b><i>Advisor:</i></b> Nadia Polikarpova</p>
+            <p><b><i>Activities: </i></b></p>
+            <ul>              
+              <li>2017-2019: <a href="https://ewb.ucsd.edu/aeroponics.html" target="_blank">Aeroponics</a> Project Member, <a href="https://ewb.ucsd.edu/" target="_blank">Engineers Without Borders</a></li>
+              <li>2017-2019: Certificate Chair, <a href="https://iscucsd.wixsite.com/main/about" target="_blank">Inter Sustainability Council</a></li>
+              <li>2017-2019: Outreach Committee, <a href="https://wic.ucsd.edu/" target="_blank">Women In Computing</a></li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">September 2017 - June 2021</span>
           </div>
         </div>
 
+      </div>
+    </section> -->
+        
         <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">James Buchanan High School</h3>
@@ -151,8 +170,6 @@
           </div>
         </div> -->
 
-      </div>
-    </section>
 
 
 
@@ -162,36 +179,54 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="research">
       <div class="w-100">
         <h2 class="mb-5">Research</h2>
+        
+        <p class="lead mb-5">
+          I am interested in generating programs through Program Synthesis, particularly for functional languages.
+          I am also interested in creating tools for 
+          people who might not be as CS inclinded, which includes non-programmers and programmer novices.
+        </p>
+
+        <p class="lead mb-5">
+          I am currently working with <a href="https://cseweb.ucsd.edu/~npolikarpova/" target="_blank">Nadia Polikarpova</a>
+          on building a type-guided top-down enumerative synthesis tool for fully polymorphic and higher-order programs in Haskell. 
+          It is built as an alternative search algorithm to <a href="http://hoogleplus.goto.ucsd.edu/" target="_blank">Hoogle+</a>, 
+          a tool that allows users to provide a type signature and optional examples and get back a code snippet that consists of a 
+          composition of Haskell library functions.
+          In November, I submitted a <a href="./files/POPL_SRC2021.pdf" target="_blank">3-page abstract</a>
+          to the 2021 POPL Student Research Competition, along with a fellow undergraduate student, Daniel Wang.
+          The abstract is currently in review.
+        </p>
+        <!-- <div class="subsubheading mb-3"><b>Program: </b> - </div> -->
+
+        <p class="lead mb-5">
+          Previously, I worked with <a href="https://cseweb.ucsd.edu/~jzhao/" target="_blank">Jishen Zhao</a> on 
+          targetting the exploration of various software caching mechanisms in key-value store database on SSD using C++ and Linux.
+          We further analyzed the access patterns of various applications and aimed to identify bottlenecks of Linux's mmap() system call.
+          This research part part of the <a href="https://ersp.eng.ucsd.edu/home" target="_blank">Early Research Scholars Program</a>, a 
+          research program designed for 2nd year CSE students to gain access to the Computer Science research. I presented my 
+          work through a <a href="./files/zhao_group.pdf" target="_blank">poster presentation</a> at the UCSD CSE Research Expo.
+        </p>
+
+        <h3 class="mb-5">Submissions / Presentations</h3>
+        <p>
+          <b>Petsy: Polymorphic Enumerative Type-Guided Synthesis</b>, <b>Darya Verzhbinsky</b>, Daniel Wang. POPL'21 Student Research Competition. 
+          [<a href="./files/POPL_SRC2021.pdf" target="_blank">pdf</a>]
+        </p>
+
+        <!-- <br>
+        <h3 class="mb-5">Presentations</h3> -->
+        
+        <p>
+          <b>Exploring Performance of Memory Mapping</b>, Bonnie Dai, <b>Darya Verzhbinsky</b>, Clair Li, Shayan Raisi. 2019 UCSD CSE Research Expo. 
+          [<a href="./files/zhao_group.pdf" target="_blank">poster</a>]
+        </p>
+
+
+        <!-- <li> Project targeted the exploration of various software caching mechanisms in key-value store database on SSD using C++ and Linux </li>
+        <li> Analyzed  </li>
+        <li> <a href="./files/zhao_group.pdf" target="_blank">Link to poster</a></li> -->
 
         <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Engineering Practicum Intern</h3>
-            <div class="subheading mb-3">Google</div>
-            <p>
-              <ul>
-                <li>Worked on KUnit dev team, which is a unit testing tool for the Linux Kernel (<a href="https://kunit.dev/third_party/kernel/docs/" target="_blank">KUnit page here</a>) </li>
-                <li>Improved test coverage for kunit_tool by 20%</li>
-                <li>Integrated line coverage results into kunit_tool through Prow's presubmit tool using GCOV and LCOV</li>
-                <li>Implemented incremental coverage as part of line coverage reporting</li>
-              </ul>
-
-            </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2019 - September 2019</span>
-          </div>
-        </div> -->
-
-
-        <!-- \cventry{June '20 -- present}{Undergraduate Researcher}{UC San Diego - CSE Department}{La Jolla, CA}{}{
-          \textit{\textbf{Advisor: }} Nadia Polikarpova\newline{}%
-          % Detailed achievements:%
-          \begin{itemize}%
-              <li>Working on Hoogle+ team <a href="http://hoogleplus.goto.ucsd.edu/" target="_blank">http://hoogleplus.goto.ucsd.edu/r</a> </li>
-              <li>Building Type-Guided Top-Down Enumerative Synthesis tool for fully polymorphic and HO programs in Haskell</li>
-              <li>Plan to submit paper</li> -->
-        
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Undergraduate Researcher</h3>
             <div class="subheading mb-3">University of California, San Diego</div>
@@ -208,7 +243,7 @@
           <div class="resume-date text-md-right">
             <span class="text-primary">June 2020 - present</span>
           </div>
-        </div>
+        </div> -->
 
         <!-- \cventry{Sept '18 -- June '19}{Student Researcher}{UC San Diego - CSE Department}{La Jolla, CA}{}{ -->
           <!-- \textit{\textbf{Program: }} \tab Early Research Scholars Program - research program designed for 2nd year CSE students to gain access to the Computer Science research\newline{}%
@@ -221,7 +256,7 @@
               \end{itemize}
           \end{itemize}} -->
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div class="resume-content">
               <h3 class="mb-0">Early Research Scholars Program</h3>
               <div class="subheading mb-3">University of California, San Diego</div>
@@ -231,10 +266,8 @@
 
               <p>
                 <ul>
-                  <!-- <li> Researcher at UCSD through a 2nd year program through the Computer Science and Engineering department at UCSD called the Early Research Scholars Program, where I carried out an independent research project throughout the course of the academic year </li> -->
                   <li> Project targeted the exploration of various software caching mechanisms in key-value store database on SSD using C++ and Linux </li>
                   <li> Analyzed the access patterns of various applications and aimed to identify bottlenecks of Linux's mmap() system call </li>
-                  <!-- <li> <a href="https://drive.google.com/file/d/1q8BH9k94hS9oHijMiFRBCJCS7HnOotSJ/view" target="_blank">Link to poster</a></li> -->
                   <li> <a href="./files/zhao_group.pdf" target="_blank">Link to poster</a></li>
                   </ul>
   
@@ -243,23 +276,12 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">September 2018 - June 2019</span>
             </div>
-          </div>
+          </div> -->
 
 
       </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
 
 
     <hr class="m-0">
@@ -272,7 +294,54 @@
       <div class="w-100">
         <h2 class="mb-5">Teaching</h2>
         
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <h3 class="mb-5">Undergraduate Tutoring - UCSD CSE Department</h3>
+        <p><b>Current:</b></p>
+          
+        <ul>
+          <li><i>(Fall 2020)</i> 
+            <a href="https://sites.google.com/eng.ucsd.edu/cse8afall2020/home?authuser=0" target="_blank">
+              CSE 8A: <b>Introduction to Computer Science</b> (Python)
+            </a> 
+            - head tutor to almost 40 undergraduate tutors</p></li>
+        </ul>
+
+        <p><b>Past:</b></p>
+        
+        <ul>
+          <li><i>(Spring 2020)</i> CSE 130: <b>Programming Languages</b></li>
+          <li><i>(Winter 2020)</i> CSE 130: <b>Programming Languages</b></li>
+          <li><i>(Fall 2019)</i> CSE 8A: <b>Introduction to Computer Science</b> (Java + Python) - head tutor to around 35 undergraduate tutors</li>
+          <li><i>(Spring 2019)</i> CSE 20: <b>Introduction to Discrete Mathematics</b></li>
+          <li><i>(Winter 2019)</i> CSE 12: <b>Basic Data Structures and OOD</b> (Java + C) - assigned grading and managed scheduling</li>
+          <li><i>(Fall 2018)</i> CSE 8A: <b>Introduction to Computer Science</b> (Java)</li>
+
+        </ul>
+        
+        <br>
+        <h3 class="mb-5">Outside Tutoring</h3>
+
+        <p><b>Past:</b></p>
+        
+        <ul>
+          <li><a href="https://girlswhocode.com/" target="_blank">Girls Who Code</a> 
+            <a href="https://girlswhocode.com/programs/summer-immersion-program" target="_blank">Summer Immersion Program</a>:
+            non-profit "building the world's largest pipeline of future female engineers". Taught a classrom of 
+            20 high school girls on the basics of Computer Science (Scratch, Python, Arduino C / Robotics, Web Development,
+            Data Science, Algorithms). Also helped the students build their final projects during their final week. 
+          <!-- <ul>
+            <li>Instructed a classroom of 20 high school girls on the basics of Computer Science in Scratch, 
+            Python, Arduino C / Robotics, Web Development, Data Science, and algorithms in a 7 week 
+            
+            through non-profit organization 
+          </li>
+          <li>Facilitated the development of several full-stack projects</li>
+          <li>Served as the representative of Girls Who Code at Intuit HQ</li>
+
+          </ul> -->
+
+        </ul>
+
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">University of California, San Diego</h3>
             <div class="subheading mb-3">Computer Science Tutor</div>
@@ -300,10 +369,10 @@
             <div class="resume-date text-md-right">
               <span class="text-primary">September  2018 - Present</span>
             </div>
-          </div>
+          </div> -->
 
           
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
             <h3 class="mb-0">Girls Who Code</h3>
             <div class="subheading mb-3">Assistant Teacher</div>
@@ -324,7 +393,7 @@
           <div class="resume-date text-md-right">
             <span class="text-primary">June 2018 - August 2018 </span>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section>
@@ -342,8 +411,26 @@
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="industry">
       <div class="w-100">
         <h2 class="mb-5">Industry</h2>
+        
+        <p><b>Past:</b></p>
+        
+        <ul>
+          <li>
+            During the Summer of 2019, I worked at <b>Google</b> as an 
+            <a href="https://buildyourfuture.withgoogle.com/programs/step/" target="_blank">Engineering Practicum Intern</a>. 
+            I worked on the <a href="https://kunit.dev/third_party/kernel/docs/" target="_blank">KUnit</a> dev team, 
+            which is a unit testing tool for the Linux Kernel. I integrated line coverage reporting into the kunit_tool through
+            <a href="https://github.com/kubernetes/test-infra/tree/master/prow" target="_blank">PROW</a>'s 
+            presubmit tool using <a href="https://gcc.gnu.org/onlinedocs/gcc/Gcov.html" target="_blank">GCOV</a>
+            and <a href="http://ltp.sourceforge.net/coverage/lcov.php" target="_blank">LCOV</a>.   
+          </li>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        </ul>
+
+
+
+
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">Engineering Practicum Intern</h3>
             <div class="subheading mb-3">Google</div>
@@ -360,7 +447,7 @@
           <div class="resume-date text-md-right">
             <span class="text-primary">June 2019 - September 2019</span>
           </div>
-        </div>
+        </div> -->
 
 
       </div>
